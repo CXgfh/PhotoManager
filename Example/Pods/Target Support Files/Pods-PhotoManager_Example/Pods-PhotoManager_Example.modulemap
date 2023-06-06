@@ -1,0 +1,6 @@
+framework module Pods_PhotoManager_Example {
+  umbrella header "Pods-PhotoManager_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

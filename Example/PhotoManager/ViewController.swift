@@ -7,18 +7,71 @@
 //
 
 import UIKit
+import PhotoManager
+import Util_V
+import SnapKit
+import Photos
 
 class ViewController: UIViewController {
+    
+    lazy var button: UIButton = {
+        let button = UIButton()
+        button.setTitleColor(.black, for: .normal)
+        button.setTitle("开始", for: .normal)
+        button.addTarget(self, action: #selector(star), for: .touchUpInside)
+        return button
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        view.addSubview(button)
+        button.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+        }
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
+extension ViewController {
+    @objc private func star() {
+        PhotoManager.sharde.delegate.add(self)
+        //picker
+//        PhotoManager.sharde.clickPattern = .edit
+//        PhotoManager.sharde.openCustomImagePicker(parent: self,
+//                                                  type: .video,
+//                                                  ascending: false,
+//                                                  assetSort: .creationDate,
+//                                                  listPattern: .default)
+        //camera
+        PhotoManager.sharde.cameraType = .shooting
+        PhotoManager.sharde.allowsEditing = true
+        PhotoManager.sharde.openCustomCamera(parent: self)
+    }
+    
+    //离开页面后 PhotoManager.sharde.delegate.remove(self)
+}
+
+extension ViewController: PhotoManagerDelegate {
+    func photoManagerPickerResult(images: [UIImage]) {
+        
+    }
+    
+    func photoManagerPickerResult(assets: [PHAsset]) {
+        
+    }
+    
+    func photoManagerPickerResult(videos: [URL]) {
+        
+    }
+    
+    func photoManagerEditResult(image new: UIImage?) {
+        
+    }
+    
+    func photoManagerEditResult(video new: URL?) {
+        
+    }
+    
+    
+}

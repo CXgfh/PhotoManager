@@ -1,0 +1,6 @@
+framework module SliderIndicator {
+  umbrella header "SliderIndicator-umbrella.h"
+
+  export *
+  module * { export * }
+}

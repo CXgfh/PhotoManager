@@ -1,0 +1,6 @@
+framework module ContentSizeView {
+  umbrella header "ContentSizeView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,13 +1,13 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '11.0'
 
 target 'PhotoManager_Example' do
   pod 'PhotoManager', :path => '../'
-
-  target 'PhotoManager_Tests' do
-    inherit! :search_paths
-
-    
-  end
+  pod 'MediaEditorManager', :path => '/Users/v/Develop/CocoaPods/远端/MediaEditorManager'
+  pod 'SliderIndicator'
+  pod 'Util_V', :path => '/Users/v/Develop/CocoaPods/远端/Util_V'
+  pod 'SnapKit'
+  pod 'ContentSizeView'
+  pod 'LookinServer'
 end

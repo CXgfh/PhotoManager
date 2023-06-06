@@ -1,0 +1,54 @@
+PODS:
+  - ContentSizeView (1.0.0)
+  - LookinServer (1.1.7):
+    - LookinServer/Core (= 1.1.7)
+  - LookinServer/Core (1.1.7)
+  - MediaEditorManager (1.0.3)
+  - PhotoManager (1.0.0):
+    - ContentSizeView
+    - MediaEditorManager
+    - SliderIndicator
+    - SnapKit
+    - Util_V
+  - SliderIndicator (1.0.4):
+    - SnapKit
+    - Util_V
+  - SnapKit (5.6.0)
+  - Util_V (1.0.4)
+
+DEPENDENCIES:
+  - ContentSizeView
+  - LookinServer
+  - "MediaEditorManager (from `/Users/v/Develop/CocoaPods/远端/MediaEditorManager`)"
+  - PhotoManager (from `../`)
+  - SliderIndicator
+  - SnapKit
+  - "Util_V (from `/Users/v/Develop/CocoaPods/远端/Util_V`)"
+
+SPEC REPOS:
+  trunk:
+    - ContentSizeView
+    - LookinServer
+    - SliderIndicator
+    - SnapKit
+
+EXTERNAL SOURCES:
+  MediaEditorManager:
+    :path: "/Users/v/Develop/CocoaPods/远端/MediaEditorManager"
+  PhotoManager:
+    :path: "../"
+  Util_V:
+    :path: "/Users/v/Develop/CocoaPods/远端/Util_V"
+
+SPEC CHECKSUMS:
+  ContentSizeView: 896bb73e95d6816b7b5b2777d1242173b7355c5e
+  LookinServer: 4ce0469b066871525611d009d8d16a7a50c23491
+  MediaEditorManager: e4032369f758df101d6a1296a61d6800e78bb45c
+  PhotoManager: ea0fe98eea48d301617e39701790957bf51cb542
+  SliderIndicator: 5c903e04985135cb4e9001b1a444203681f6e3f9
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  Util_V: 8f4ba74a1ff3ac07a2509439ab53dd73afa1442e
+
+PODFILE CHECKSUM: 858f9fabed8ff3ea5ec951871ef5d311b67a339d
+
+COCOAPODS: 1.12.1

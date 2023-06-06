@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'PhotoManager'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of PhotoManager.'
 
 # This description is used to generate tags and improve search results.
@@ -28,15 +28,21 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/oauth2/PhotoManager.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
+  s.swift_versions = '5.0'
+  
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'PhotoManager/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'PhotoManager' => ['PhotoManager/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'PhotoManager' => ['PhotoManager/Assets/*']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit', 'Photos', 'AVFoundation', 'AVKit'
+  s.dependency 'Util_V'
+  s.dependency 'SnapKit'
+  s.dependency 'ContentSizeView'
+  s.dependency 'SliderIndicator'
+  s.dependency 'MediaEditorManager'
 end
