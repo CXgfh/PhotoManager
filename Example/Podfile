@@ -4,9 +4,9 @@ platform :ios, '11.0'
 
 target 'PhotoManager_Example' do
   pod 'PhotoManager', :path => '../'
-  pod 'MediaEditorManager', :path => '/Users/v/Develop/CocoaPods/远端/MediaEditorManager'
+  pod 'MediaEditorManager'
   pod 'SliderIndicator'
-  pod 'Util_V', :path => '/Users/v/Develop/CocoaPods/远端/Util_V'
+  pod 'Util_V'
   pod 'SnapKit'
   pod 'ContentSizeView'
   pod 'LookinServer'
