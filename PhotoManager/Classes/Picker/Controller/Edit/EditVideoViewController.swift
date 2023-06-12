@@ -149,14 +149,14 @@ extension EditVideoViewController {
             isActivity = true
             self.activityView.isHidden = false
             debugPrint("开始编辑")
-//            if settingView.isNotChanged {
-//                self.activityView.isHidden = true
-//                self.isActivity = false
-//                let url = (av as? AVURLAsset)?.url
-//                self.confirm?(url)
-//            } else {
+            if settingView.isNotChanged {
+                self.activityView.isHidden = true
+                self.isActivity = false
+                let url = (asset as? AVURLAsset)?.url
+                self.confirm?(url)
+            } else {
                 let water = MediaEditorWaterMaker(image: UIImage(photo: "picker_choose"), centerOffsetX: 0, centerOffsetY: 0, star: .zero, duration: 20)
-                manager.editVideo(at: asset,
+                manager.edit(at: asset,
                                   tailoring: settingView.getTailoring(),
                                   compression: settingView.getCompression(),
                                   waterMakers: [water],
@@ -183,7 +183,7 @@ extension EditVideoViewController {
                         }
                     }
                 })
-//            }
+            }
         } else {
             debugPrint("视频未加载")
         }
