@@ -14,7 +14,7 @@ PODS:
     - SnapKit
     - Util_V
   - SnapKit (5.6.0)
-  - Util_V (1.0.4)
+  - Util_V (1.0.6)
 
 DEPENDENCIES:
   - ContentSizeView
@@ -47,7 +47,7 @@ SPEC CHECKSUMS:
   PhotoManager: ea0fe98eea48d301617e39701790957bf51cb542
   SliderIndicator: 5c903e04985135cb4e9001b1a444203681f6e3f9
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
-  Util_V: 8f4ba74a1ff3ac07a2509439ab53dd73afa1442e
+  Util_V: 88dbd393884662fab37d51743acff4dbcc589321
 
 PODFILE CHECKSUM: 858f9fabed8ff3ea5ec951871ef5d311b67a339d
 
